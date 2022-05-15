@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Your Service Form</title>
+    <link rel="stylesheet" href="/Front-End/asset/css/index.css">
+    <link rel="stylesheet" href="/Front-End/asset/css/map.css">
+</head>
+<body>
+    <div class="container container-form container-service-form">
+        <div class="content content-form content-service-form">
+            <div class="content-header content-header-service-form">
+                <h2 class="content-header-h2">Schedule Your Servicing</h2>
+            </div>
+            <div class="content-panel">
+                <div class="content-panel-account active">
+                    <span>User Info</span>
+                </div>
+                <div class="content-panel-personal">
+                    <span>Vehicle Info</span>
+                </div>
+                <div class="content-panel-personal">
+                    <span>Scheduling Info</span>
+                </div>
+            </div>
+            <div class="content-schedule-servicing-form">
+                <form action="/schedule-servicing" method="post">
+                    <div class="content-form-message">
+                        <p class="form-message-description">Enter Your Details Below.</p>
+                    </div>
+                    <div class="content-form">
+                        <div class="content-form-user-details">
+                            <div class="content-form-name">
+                                <input type="text" name="name" id="form-full-name" class="form-full-name" required>
+                                <span class="form-field-label">Full Name</span>
+                            </div>
+                            <div class="content-form-email">
+                                <input type="email" name="email" id="form-email" class="form-email" required>
+                                <span class="form-field-label">Email</span>
+                            </div>
+                            <div class="content-form-phone">
+                                <input type="number" name="phone" id="form-phone" class="form-phone" required>
+                                <span class="form-field-label">Phone</span>
+                            </div>
+                        </div>
+                        <div class="content-form-vehicle-details">
+                            <div class="content-form-vehicle-model">
+                                <input type="text" name="vehicleModel" id="form-vehicle-model" class="form-vehicle-model" required>
+                                <span class="form-field-label">Model Name</span>
+                            </div>
+                            <div class="content-form-year">
+                                <input type="number" name="vehicleYear" id="form-vehicle-year" class="form-vehicle-year" required>
+                                <span class="form-field-label">Year</span>
+                            </div>
+                            <div class="content-form-vehicle-registration-no">
+                                <input type="text" name="vehicleRegistrationNo" id="form-vehicle-registration-no" class="form-vehicle-registration-no" required>
+                                <span class="form-field-label">Registration No</span>
+                            </div>
+                            <div class="content-form-vehicle-serial-no">
+                                <input type="text" name="vehicleSerialNo" id="form-vehicle-serial-no" class="form-vehicle-serial-no" required>
+                                <span class="form-field-label">Serial No</span>
+                            </div>
+                            <div class="content-form-vehicle-insurance">
+                                <div class="content-form-vehicle-insurance-label">
+                                    <span class="form-field-label form-field-label-radio">Insurance</span>
+                                </div>
+                                <div class="content-form-vehicle-insurance-input">
+                                    <input type="radio" name="vehicleInsurance" id="form-vehicle-insurance-yes" class="form-vehicle-insurance form-vehicle-insurance-yes" required>
+                                    <label for="form-vehicle-insurance-yes">Yes</label>
+                                    <input type="radio" name="vehicleInsurance" id="form-vehicle-insurance-no" class="form-vehicle-insurance form-vehicle-insurance-no" required>
+                                    <label for="form-vehicle-insurance-no">No</label>
+                                </div>
+                            </div>
+                            <div class="content-form-vehicle-category">
+                                <div class="content-form-vehicle-category-label">
+                                    <span class="form-field-label form-field-label-radio">category</span>
+                                </div>
+                                <div class="content-form-vehicle-category-input">
+                                    <input type="radio" name="vehicleCategory" id="form-vehicle-category-repair" class="form-vehicle-category form-vehicle-category-repair" required>
+                                    <label for="form-vehicle-category-repair">Repair</label>
+                                    <input type="radio" name="vehicleCategory" id="form-vehicle-category-replace" class="form-vehicle-category form-vehicle-category-replace" required>
+                                    <label for="form-vehicle-category-replace">Replace</label>
+                                </div>
+                            </div>
+                            <div class="content-form-vehicle-service-description">
+                                <label class="form-field-label form-field-label-textarea">Description</label>
+                                <textarea name="vehicleDescription" id="form-vehicle-service-description" class="form-vehicle-service-description" rows="8" required></textarea>
+                            </div>
+                        </div>
+                        <div class="content-scheduling-details">
+                            <div class="content-form-schedule-set-map" id="content-form-schedule-set-map">
+
+                            </div>
+                            <div class="content-form-schedule-address">
+                                <input type="text" name="scheduleAddress" id="form-schedule-address" class="form-schedule-address" required>
+                                <span class="form-field-label">Drop Location</span>
+                            </div>
+                            <div class="content-form-schedule-city">
+                                <input type="text" name="scheduleCity" id="form-schedule-city" class="form-schedule-city" required>
+                                <span class="form-field-label">Schedule Location</span>
+                            </div>
+                            <div class="content-form-schedule-date">
+                                <div class="content-form-schedule-date-label">
+                                    <span class="form-field-label">Schedule Date</span>
+                                </div>
+                                <div class="content-form-schedule-date-input">
+                                    <input type="date" name="scheduleDate" id="form-schedule-date" class="form-schedule-date" required>
+                                </div>
+                            </div>
+                            <div class="content-form-schedule-time">
+                                <div class="content-form-schedule-time-label">
+                                    <span class="form-field-label">Schedule Time</span>
+                                </div>
+                                <div class="content-form-schedule-time-input">
+                                    <select name="scheduleTime" id="form-schedule-time" class="form-schedule-time" required>
+                                        <option value="none">--Select--</option>
+                                        <option value="10-to-12">10:00 AM to 12:00 PM</option>
+                                        <option value="12-to-3">12:00 PM to 03:00 PM</option>
+                                        <option value="3-to-6">03:00 PM to 06:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-submit-button">
+                        <div class="content-submit-btn">
+                            <input type="submit" value="Next" class="submit-btn">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/Front-End/asset/js/map.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeDt3ZsPoeSvDCttvQURP5FsmCVxoLEV4&callback=initMap&libraries=places&v=weekly"></script>
+</body>
+</html>

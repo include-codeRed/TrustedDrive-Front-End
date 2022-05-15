@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./asset/css/index.css">
+</head>
+<body>
+    <div class="container container-form">
+        <div class="content content-form">
+            <div class="content-header content-header-form">
+                <h2 class="content-header-h2">
+                    Log-In
+                </h2>
+                <p class="content-header-description">
+                    Let's Login into Your Account.
+                </p>
+            </div>
+            <!-- <div class="content-panel">
+                <div class="content-panel-account active">
+                    <span>Client</span>
+                </div>
+                <div class="content-panel-personal">
+                    <span>Employee</span>
+                </div>
+            </div> -->
+            <div class="content-sign-in-form">
+                <form action="/user/log-in" method="post">
+                    <div class="content-form-message">
+                        <p class="form-message-description">Enter Your Details Below.</p>
+                    </div>
+                    <div class="content-form">
+                        <div class="content-form-email">
+                            <input type="email" name="email" id="form-email" class="form-email" required>
+                            <span class="form-field-label">Email</span>
+                        </div>
+                        <div class="content-form-password">
+                            <input type="password" name="originalPassword" id="form-pass-original" class="form-pass-original" required>
+                            <span class="form-field-label">Password</span>
+                        </div>
+                    </div>
+                    <div class="content-submit-button">
+                        <div class="content-submit-btn">
+                            <input type="submit" value="Login" class="submit-btn">
+                        </div>
+                        <div class="content-go-to-sign-up">
+                            <p class="go-to-sign-up-description">Not Having An Account? <a href="/signup" class="go-to-sign-up-page-btn">Sign-Up</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

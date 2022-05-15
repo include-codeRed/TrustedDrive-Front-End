@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: rgb(245, 243, 240);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 56px;
+    background-color: #282A35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    border-bottom: 2px solid #6e7072;
+    font-family: 'Cabin', sans-serif;
+    padding: 6px 8px;
+}
+
+.nav-bar-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-menu .nav-menu {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu .menu {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu .bar {
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    margin: 2.5px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+.nav-bar .nav-bar-link {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 14px;
+    /* border:1px solid rgb(6, 121, 44); */
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-bar-link .nav-link:hover {
+    background-color: black;
+}
+
+#link-join-us:hover {
+    background-color: rgb(39, 184, 116);
+    color: black;
+}
+
+#link-emergencies:hover {
+    background-color: rgb(224, 60, 60);
+    color: black;
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    min-height: calc(100vh - 56px);
+}
+
+.container-header-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 4%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.container-head {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+
+}
+
+#car {
+    font-size: 50px;
+    position: relative;
+    top: -10px;
+}
+
+#header-content-heading {
+    font-size: 26px;
+}
+
+#header-content-para {
+    color: #6e7072
+}
+
+.head-link {
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 16px 22px;
+    margin: 0px 5px;
+    background-color: rgb(192, 237, 237);
+    color: black;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head-join-us:hover {
+    background-color: rgb(39, 184, 116);
+    color: black;
+}
+
+.head-emergencies:hover {
+    background-color: rgb(224, 60, 60);
+    color: black;
+}
+
+.container-header-images {
+    width: 55%;
+}
+
+.sec-web {
+    border: 1px solid #282A35;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(227, 219, 209);
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /*Height*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form {
+    background-image: url('../image/reparing_image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+}
+
+.container .content {
+    width: 100%;
+    height: 100%;
+    background-color: #212020;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content-form {
+    align-items: center;
+    justify-content: center;
+    padding: 2% 4%;
+}
+
+.content>[class*="content-"] {
+    padding: 2% 0;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.content .content-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-header .content-header-h2 {
+    font-size: 33px;
+    color: #ece3d5;
+    margin: 9px 0;
+}
+
+.content-header .content-header-description {
+    font-size: 16px;
+    color: #ebe0ce;
+}
+
+.content .content-panel {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background-color: #313333;
+    color: #d1c7c7;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+
+.content-panel>[class*="content-panel-"] {
+    width: 50%;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+/* panel active */
+.content-panel .active {
+    border-bottom: 4px solid #073945;
+}
+
+.content-sign-up-form>form,
+.content-schedule-servicing-form>form,
+.content-sign-in-form>form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 9px;
+}
+
+.content-sign-up-form .content-form-message,
+.content-schedule-servicing-form .content-form-message,
+.content-sign-in-form .content-form-message {
+    margin: 9px 0;
+    color: #ebe0ce;
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-sign-up-form .content-form-account {
+    display: none;
+}
+/* 
+.content-sign-up-form .content-form-personal {
+    border: 1px solid red;
+} */
+
+
+
+
+
+.content-form-date-of-birth .content-form-date-of-birth-input input {
+    width: 100%;
+}
+
+.content-sign-up-form .content-form>[class*="content-form-"],
+.content-sign-in-form .content-form>[class*="content-form-"],
+.content-schedule-servicing-form .content-form>[class*="content-form-"],
+.content-form .content-form-password>[class*="password-"],
+.content-form-personal .content-form-date-of-birth,
+.content-form-personal .content-form-gender,
+.content-form-personal .content-form-country,
+.content-form-user-details>[class*="content-form-"],
+.content-form-vehicle-details>[class*="content-form-"],
+.content-scheduling-details>[class*="content-form-"] {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    position: relative;
+}
+
+.content-form .form-field-label,
+[class*="content-form-"] .form-field-label {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    font-size: 13px;
+    color: #6c6969;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.4s;
+    z-index: 0 !important;
+    /* color: red; */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.content-sign-up-form .content-form>[class*="content-form-"] input,
+.content-sign-in-form .content-form>[class*="content-form-"] input,
+.content-schedule-servicing-form>form [class*="content-form-"] input,
+.content-form .content-form-password>[class*="password-"] input,
+.content-form-personal [class*="content-form-"] > input {
+    z-index: 2 !important;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #073945;
+    border-radius: 4px;
+    color: #fff;
+    padding: 4px 6px;
+    outline: none;
+    font-size: 20px;
+    /* background-color: red; */
+}
+
+.content-sign-up-form .content-form>[class*="content-form-"] input:focus~.form-field-label,
+.content-sign-in-form .content-form>[class*="content-form-"] input:focus~.form-field-label,
+.content-schedule-servicing-form>form [class*="content-form-"] input:focus~.form-field-label,
+.content-form .content-form-password>[class*="password-"] input:focus~.form-field-label,
+.content-sign-up-form .content-form>[class*="content-form-"] input:valid~.form-field-label,
+.content-sign-in-form .content-form>[class*="content-form-"] input:valid~.form-field-label,
+.content-schedule-servicing-form>form [class*="content-form-"] input:valid~.form-field-label,
+.content-form .content-form-password>[class*="password-"] input:valid~.form-field-label {
+    transform: translateY(-18px);
+    font-size: 10px;
+}
+
+.content-sign-up-form .content-submit-button,
+.content-schedule-servicing-form .content-submit-button,
+.content-sign-in-form .content-submit-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.content-submit-button [class*="content-"] {
+    margin: 6px;
+}
+
+.content-submit-button .submit-btn {
+    padding: 8px 32px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #073945;
+    border-radius: 6px;
+    font-size: 22px;
+    color: #d1c7c7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0px 0px 20px #555;
+    transition: 0.2s;
+}
+
+.content-submit-button .submit-btn:active,
+.content-submit-button .submit-btn:focus {
+    box-shadow: 0px 0px 10px #555;
+}
+
+.content-go-to-sign-up .go-to-sign-up-description,
+.content-go-to-sign-in .go-to-sign-in-description {
+    color: #b8b6b6;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-go-to-sign-up .go-to-sign-up-description .go-to-sign-up-page-btn,
+.content-go-to-sign-in .go-to-sign-in-description .go-to-sign-in-page-btn {
+    color: #9e9a9a;
+    padding: 8px;
+}
+
+/* Profile */
+
+/* .container-profile {
+    border: 1px solid red;
+    overflow: auto;
+} */
+
+.container-profile .content-profile {
+    /* border: 1px solid red; */
+    overflow: auto;
+}
+
+.content-profile .content-header-profile {
+    margin: 0;
+    padding: 0;
+}
+
+.content-header-profile .content-profile-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://coursera_assets.s3.amazonaws.com/growth_account_profile/account_bg_black2.png);
+    height: 328px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-profile-img .content-profile-dp-img {
+    border-radius: 50%;
+    height: 144px;
+    width: 144px;
+    background-color: #073945;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-profile-dp-img .profile-dp {
+    width: 100%;
+    height: 100%;
+}
+
+.content-profile-img .content-profile-name {
+    margin: 12px 0;
+}
+
+.content-profile-name .profile-name {
+    font-weight: 900;
+    color: #c9c9c9;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content .content-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-information .booking-history,
+.content-information .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 244px;
+    /* border: 1px solid red; */
+}
+
+.booking-history .content-booking-heading,
+.about-me .content-about-me-heading {
+    padding: 16px 12px;
+}
+
+.content-booking-heading .heading-booking,
+.content-about-me-heading .heading-about-me {
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a7a7a7;
+}
+
+.booking-history .booking-details {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    background-image: url("https://thefitzip.com/public/frontend/imgs/norecordfound.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.about-me .content-about-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-about-info .about-info {
+    width: 100%;
+    padding: 4% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+}
+
+.about-info>[class*="-title"] {
+    /* border: 1px solid red; */
+    width: 50px;
+}
+
+.content-about-title>[class*="title-"],
+.content-about-value [class*="title-value-"] {
+    color: #848383;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 16px;
+}
+
+/* 
+.container-service {
+    border: 1px solid red;
+} */
+
+.container-service .content-service {
+    overflow-x: auto;
+    /* height: 100vh; */
+    /* border: 1px solid red; */
+}
+
+.content-service .content-schedule-service,
+.content-service .content-emergency-service {
+    width: 100%;
+    min-height: 80%;
+    padding: 4% 0;
+    /* border: 1px solid red; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212020;
+}
+
+.content-service .content-emergency-service {
+    background-color: #382a2a;
+}
+
+
+.content-schedule-service .schedule-header,
+.content-emergency-service .emergency-header {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-header .img,
+.emergency-header .img {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 220px;
+    display: flex;
+}
+
+.img img {
+    width: auto;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.schedule-header .title,
+.emergency-header .title {
+    padding: 8px 0;
+}
+
+.schedule-header .title h2,
+.emergency-header .title h2 {
+    color: #aeadad;
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content-schedule-service .schedule-btn,
+.content-emergency-service .emergency-btn {
+    border: 1px solid #000000;
+    height: 55px;
+    line-height: 55px;
+}
+
+.schedule-btn a,
+.emergency-btn a {
+    width: 100%;
+    height: 100%;
+    padding: 12px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #cdcdcd;
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.schedule-btn a:hover::after,
+.emergency-btn a:hover::after,
+.schedule-btn a:active::after,
+.emergency-btn a:active::after,
+.schedule-btn a:focus::after,
+.emergency-btn a:focus::after {
+    content: ' »';
+    font-size: 21px;
+}
+
+.content-schedule-service .schedule-description,
+.content-emergency-service .emergency-description {
+    width: 100%;
+    height: auto;
+    padding: 2% 4%;
+}
+
+.schedule-description .description,
+.emergency-description .description {
+    text-align: center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7b7777;
+}
+
+.content-service-form {
+    overflow-y: auto;
+}
+
+.container-service-form .content-service-form {
+    justify-content: flex-start;
+}
+
+.container-service-form .content-service-form form,
+.container-service-form .content-service-form {
+    padding: 0;
+    margin: 0;
+}
+
+/* .content-schedule-servicing-form .content-form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border: 1px solid red;
+    overflow: hidden;
+} */
+
+.content-form-user-details>[class*="content-form-"] input,
+.content-form-vehicle-details>[class*="content-form-"] input,
+.content-scheduling-details>[class*="content-form-"] input,
+.content-scheduling-details>[class*="content-form-"] select,
+.content-schedule-servicing-form .content-form>[class*="content-form-"],
+.content-form-personal .content-form-country select {
+    width: 100%;
+}
+
+.content-form-vehicle-details .content-form-vehicle-insurance,
+.content-form-vehicle-details .content-form-vehicle-category {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.content-form-vehicle-details .content-form-vehicle-insurance>div,
+.content-form-vehicle-details .content-form-vehicle-category>div,
+.content-form-personal .content-form-gender>div,
+.content-form-personal .content-form-country>div,
+.content-scheduling-details .content-form-schedule-time>div {
+    margin: 8px 0;
+}
+
+.content-form-vehicle-details .content-form-vehicle-insurance span,
+.content-form-vehicle-details .content-form-vehicle-category span,
+.content-form-vehicle-details .content-form-vehicle-service-description label,
+.content-scheduling-details .content-form-schedule-date span,
+.content-scheduling-details .content-form-schedule-time-label span,
+.content-form-date-of-birth .content-form-date-of-birth-label span,
+.content-form-personal .content-form-gender span,
+.content-form-personal .content-form-country span {
+    position: relative;
+    top: 0;
+}
+
+.content-form-vehicle-details .content-form-vehicle-insurance input,
+.content-form-vehicle-details .content-form-vehicle-category input,
+.content-form-personal .content-form-gender input {
+    width: auto;
+    margin: 3px 12px;
+}
+
+.content-form-vehicle-details .content-form-vehicle-service-description textarea {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 4px 6px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.content-form-vehicle-details .content-form-vehicle-service-description label,
+.content-form-vehicle-details .content-form-vehicle-service-description textarea {
+    margin: 5px 0;
+}
+
+.content-form-vehicle-details .content-form-vehicle-insurance label,
+.content-form-vehicle-details .content-form-vehicle-category label,
+.content-form-personal .content-form-gender label {
+    color: #757474;
+}
+
+.content-scheduling-details .content-form-schedule-time-input select,
+.content-form-personal .content-form-country select {
+    padding: 4px 6px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.content-scheduling-details .content-form-schedule-time-input option {
+    background-color: #525252;
+}
+
+.content-scheduling-details .content-form-schedule-set-map {
+    height: 350px;
+    margin: 5px 0;
+}
+
+
+.content-schedule-servicing-form .content-form .content-form-user-details {
+    display: none;
+}
+
+.content-schedule-servicing-form .content-form .content-form-vehicle-details {
+    display: none;
+}
+
+.content-schedule-servicing-form .content-form .content-scheduling-details {
+    /* display: none; */
+}
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        overflow-y: auto;
+    }
+
+    .container .content {
+        width: 90%;
+        height: auto;
+    }
+
+    .content-header .content-header-h2 {
+        font-size: 43px;
+        margin: 12px 0;
+    }
+
+    .content-header .content-header-description {
+        font-size: 23px;
+    }
+
+    .content .content-panel {
+        font-size: 23px;
+        height: 48px;
+    }
+
+    .content-panel>[class*="content-panel-"] {
+        line-height: 48px;
+    }
+
+    .content-sign-up-form .content-form-message {
+        font-size: 21px;
+    }
+
+    .content-form .form-field-label,
+    [class*="content-form-"] .form-field-label {
+        font-size: 16px;
+        top: 12px;
+    }
+
+    .content-sign-up-form .content-form>[class*="content-form-"] input,
+    .content-form .content-form-password>[class*="password-"] input {
+        padding: 7px 6px;
+        font-size: 23px;
+    }
+
+    /* .content-sign-up-form .content-form > [class*="content-form-"] input:focus ~ .form-field-label, 
+    .content-form .content-form-password > [class*="password-"] input:focus ~ .form-field-label,
+    .content-sign-up-form .content-form > [class*="content-form-"] input:valid ~ .form-field-label, 
+    .content-form .content-form-password > [class*="password-"] input:valid ~ .form-field-label {
+        font-size: 16px;
+        transform: translateY(-26px);
+    } */
+
+    .container-profile,
+    .container-service,
+    .container-service-form {
+        width: 100%;
+    }
+
+    .container-profile .content-profile,
+    .container-service .content-service,
+    .container-service-form .content-service-form {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar {
+        flex-direction: row;
+    }
+
+    .nav-bar-menu {
+        width: 30%;
+    }
+
+    .nav-menu .menu {
+        display: none;
+    }
+
+    .nav-bar .nav-bar-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 70%;
+    }
+
+    .container .content {
+        /* border: 1px solid red; */
+        width: 85%;
+    }
+
+    .container-profile,
+    .container-service {
+        width: 100%;
+    }
+
+    .container-profile .content-profile,
+    .container-service .content-service {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-profile .content-information,
+    .container-service .content-service {
+        flex-direction: row;
+    }
+
+    .container-service-form {
+        height: 100%;
+        overflow-y: auto;
+        padding: 2% auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 4% 6%;
+    }
+
+    .container .content {
+        width: 60%;
+    }
+
+    .container-profile,
+    .container-service {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-profile .content-profile,
+    .container-service .content-service {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-information .booking-history,
+    .content-information .about-me {
+        align-items: flex-start;
+    }
+
+    .booking-history .content-booking-heading,
+    .about-me .content-about-me-heading {
+        padding: 16px 10%;
+    }
+}
+
+/* @media screen and (orientation: landscape) {
+    .container {
+        height: 100%;
+    }
+} */

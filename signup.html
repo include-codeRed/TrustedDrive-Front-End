@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./asset/css/index.css">
+</head>
+<body>
+    <div class="container container-form">
+        <div class="content content-form">
+            <div class="content-header content-header-form">
+                <h2 class="content-header-h2">
+                    Sign-Up
+                </h2>
+                <p class="content-header-description">
+                    Let's Create Your Account.
+                </p>
+            </div>
+            <div class="content-panel">
+                <div class="content-panel-account active">
+                    <span>Account</span>
+                </div>
+                <div class="content-panel-personal">
+                    <span>Personal Info</span>
+                </div>
+            </div>
+            <div class="content-sign-up-form">
+                <form action="/user/sign-up" method="post">
+                    <div class="content-form-message">
+                        <p class="form-message-description">Enter Your Details Below.</p>
+                    </div>
+                    <div class="content-form content-form-account" id="content-form-account">
+                        <div class="content-form-name">
+                            <input type="text" name="name" id="form-full-name" class="form-full-name" required>
+                            <span class="form-field-label">Full Name</span>
+                        </div>
+                        <div class="content-form-email">
+                            <input type="email" name="email" id="form-email" class="form-email" required>
+                            <span class="form-field-label">Email</span>
+                        </div>
+                        <div class="content-form-phone">
+                            <input type="number" name="phone" id="form-phone" class="form-phone" required>
+                            <span class="form-field-label">Phone</span>
+                        </div>
+                        <div class="content-form-password">
+                            <div class="password-original">
+                                <input type="password" name="originalPassword" id="form-pass-original" class="form-pass-original" required>
+                                <span class="form-field-label">Password</span>
+                            </div>
+                            <div class="password-confirm">
+                                <input type="password" name="confirmPassword" id="form-pass-confirm" class="form-pass-confirm" required>
+                                <span class="form-field-label">Confirm Password</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-form content-form-personal" id="content-form-personal">
+                        <div class="content-form-date-of-birth">
+                            <div class="content-form-date-of-birth-label">
+                                <span class="form-field-label">Date Of Birth</span>
+                            </div>
+                            <div class="content-form-date-of-birth-input">
+                                <input type="date" name="dateOfBirth" id="form-date-of-birth" class="form-date-of-birth" required>
+                            </div>
+                        </div>
+                        <div class="content-form-gender">
+                            <div class="content-form-gender-label">
+                                <span class="form-field-label form-field-label-radio">Gender</span>
+                            </div>
+                            <div class="content-form-gender-input">
+                                <input type="radio" name="gender" id="form-gender-male" class="form-gender-male" required>
+                                <label for="form-gender-male">Male</label>
+                                <input type="radio" name="gender" id="form-gender-female" class="form-gender-female" required>
+                                <label for="form-gender-female">Female</label>
+                                <input type="radio" name="gender" id="form-gender-other" class="form-gender-other" required>
+                                <label for="form-gender-other">Other</label>
+                            </div>
+                        </div>
+                        <div class="content-form-country">
+                            <div class="content-form-country-label">
+                                <span class="form-field-label">Schedule Time</span>
+                            </div>
+                            <div class="content-form-country-input">
+                                <select name="country" id="form-country" class="form-country" required>
+                                    <option value="none">--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content-form-city">
+                            <input type="text" name="city" id="form-city" class="form-city" required>
+                            <span class="form-field-label">City</span>
+                        </div>
+                    </div>
+                    <div class="content-submit-button">
+                        <div class="content-submit-btn">
+                            <input type="submit" value="Sign-Up" class="submit-btn">
+                        </div>
+                        <div class="content-go-to-sign-in">
+                            <p class="go-to-sign-in-description">Already Having An Account? <a href="/signup" class="go-to-sign-in-page-btn">Sign-In</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

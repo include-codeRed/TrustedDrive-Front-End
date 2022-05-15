@@ -1,0 +1,33 @@
+.custom-map-control-button {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url('/Front-End/asset/image/mylocation.png');
+    background-repeat: no-repeat;
+    background-position: -179px 5px;
+    border: none;
+}
+
+.marker-div-custom {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    /* border: 1px solid red; */
+}
+
+.marker-div-custom .marker-img-custom {
+    width: 34px;
+    height: 40px;
+    /* background-image: url('./image/map_icon.png');
+    background-position: 0px 0px;
+    background-size: 34px 40px;
+    background-repeat: no-repeat; */
+    border: none;
+    outline: none;
+    position: relative;
+    top: -17px;
+    left: 9px;
+    /* border: 1px solid red; */
+}
